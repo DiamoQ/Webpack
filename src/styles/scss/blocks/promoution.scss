@@ -1,0 +1,95 @@
+.promoution {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 66px;
+
+    .call__btn {
+      padding: 12px 29px;
+      border-radius: 7px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 37px;
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 387px;
+    height: 490px;
+    padding-bottom: 16px;
+
+    &--moving {
+      background-image: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0) 0%,
+          rgb(255, 255, 255) 8%,
+          rgb(255, 255, 255) 13%,
+          rgba(0, 0, 0, 0) 57%
+        ),
+        url("./../../images/promoution/familyMoving.png");
+    }
+
+    &--family {
+      background-image: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0) 0%,
+          rgb(255, 255, 255) 8%,
+          rgb(255, 255, 255) 13%,
+          rgba(0, 0, 0, 0) 57%
+        ),
+        url("./../../images/promoution/newFamily.png");
+    }
+
+    &--grand {
+      background-image: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0) 0%,
+          rgb(255, 255, 255) 8%,
+          rgb(255, 255, 255) 13%,
+          rgba(0, 0, 0, 0) 57%
+        ),
+        url("./../../images/promoution/grand.png");
+    }
+  }
+
+  &__text {
+    position: relative;
+    text-align: center;
+    padding: 0 57px;
+    top: -21px;
+    line-height: 19px;
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    position: relative;
+    top: -21px;
+  }
+
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 205px;
+    border: 1px solid #6cac3d;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #6cac3d;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+  }
+}

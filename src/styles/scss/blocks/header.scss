@@ -1,0 +1,162 @@
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 23px;
+}
+
+.company__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 23px;
+}
+
+.company__link-list {
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+  padding: 3px 24px 0px;
+
+  .company__link {
+    & a {
+      transition: color 0.5s ease-out;
+    }
+
+    & a:hover {
+      color: #234875;
+    }
+  }
+}
+
+.company__contacts {
+  display: flex;
+  text-align: end;
+
+  &-number {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 2px;
+
+    &::before {
+      content: url("./../../images/iconSprite/headerPhoneIcon.svg");
+      top: 3px;
+      right: 5px;
+      position: relative;
+    }
+  }
+
+  &-schedule {
+    font-size: 14px;
+  }
+
+  .call__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    max-height: 45px;
+    width: 173px;
+    border: 1px solid #6cac3d;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #6cac3d;
+    margin-left: 33px;
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 68px;
+  border-top: 1px solid #6cac3d;
+  border-bottom: 1px solid #6cac3d;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 230px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #6cac3d;
+    }
+
+    &:hover .services__link-window {
+      // left: 0;
+      width: 230px;
+
+      &__list {
+        display: block;
+      }
+    }
+
+    &-window {
+      // left: -9999px;
+      transition: left 0.1s;
+      position: absolute;
+      top: 67px;
+      width: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: #fff;
+      z-index: 10;
+      padding: 25px 0 30px;
+      filter: drop-shadow(0 0 10px #bebebe);
+
+      // &--rooms {
+      //   // padding-right: 31px;
+      // }
+
+      &__list {
+        display: none;
+      }
+
+      &__item {
+        margin-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+
+        &:hover .services__link-window__bord {
+          opacity: 1;
+        }     
+      }
+
+      &__bord {
+        position: absolute;
+        opacity: 0;
+        left: -25px;
+        top: -11px;
+        width: 165px;
+        height: 45px;
+        border: 1px solid #6cac3d;
+        transition: opacity 0.3s;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      .services__link-name {
+        position: relative;
+        &::after {
+          content: url("./../../images/header/Vector.png");
+          position: absolute;
+          right: -20px;
+        }
+      }
+    }
+  }
+}

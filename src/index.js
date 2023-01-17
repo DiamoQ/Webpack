@@ -1,16 +1,9 @@
-import Post from './Post';
-// import json from './assets/json.json';
-// import xml from './assets/data.xml';
-// import csv from './assets/data.csv'
-import webpackLogo from './assets/webpack-logo.png';
-import './babel.js';
-import './styles/styles.css';
-import './styles/less.less';
-import './styles/scss.scss';
+'use strict';
 
-const post = new Post('Webpack Post Title', webpackLogo);
-
-console.log('Post to String:', post.toString());
-// console.log('CSV:', csv);
-// console.log('JSON:', json);
-// console.log('XML:', xml);
+import './styles/scss/main.scss';
+import './js/meetCaluclator.js';
+import './js/exampleSlider.js';
+import './js/ourTeamSlider.js';
+import './js/masterSlider.js';
+import './js/masterSlider.js';
+import './js/question.js';

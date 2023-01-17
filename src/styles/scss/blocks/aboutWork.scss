@@ -1,0 +1,151 @@
+.about-work {
+  padding-top: 57px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 3px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 208px;
+    text-align: center;
+    margin-bottom: 70px;
+    line-height: 21px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 19px;
+    border-bottom: 6px solid #f2f2f2;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    max-width: 147px;
+    padding: 0 10px;
+  }
+
+  &__icon-block {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &--worker,
+    &--estimate,
+    &--contract,
+    &--waybill,
+    &--camera,
+    &--act,
+    &--cooperation,
+    &--guarantee {
+      &::before {
+        content: "";
+        background-image: url("./../../images/aboutWork/greenCircle.png");
+        background-size: cover;
+        top: 51px;
+        right: 23px;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        opacity: 0.8;
+      }
+    }
+
+    &--estimate {
+      &::before {
+        top: 1px;
+        right: -1px;
+      }
+    }
+
+    &--contract {
+      &::before {
+        top: 45px;
+        right: 26px;
+      }
+    }
+
+    &--waybill {
+      &::before {
+        top: 3px;
+        right: 22px;
+      }
+    }
+
+    &--camera {
+      &::before {
+        top: 23px;
+        right: 23px;
+      }
+    }
+
+    &--act {
+      &::before {
+        top: 44px;
+        right: 33px;
+      }
+    }
+
+    &--cooperation {
+      &::before {
+        top: 3px;
+        right: 6px;
+      }
+    }
+
+    &--guarantee {
+      &::before {
+        top: 36px;
+        right: 11px;
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+
+    &--camera {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+      margin-bottom: 34px;
+    }
+  }
+
+  &__desc {
+    font-weight: bold;
+    position: relative;
+
+    &::before {
+      content: url("./../../images/aboutWork/greyCircle.png");
+      top: 76px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      position: absolute;
+    }
+
+    &--contract {
+      &::before {
+        right: 22px;
+      }
+    }
+  }
+}

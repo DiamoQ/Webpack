@@ -1,0 +1,29 @@
+$containerWidth: 1200px;
+$baseFontSize: 16px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "./media.scss";
+@import "./blocks/base.scss";
+@import "./blocks/header.scss";
+@import "./blocks/meet.scss";
+@import "./blocks/reset.scss";
+@import "./blocks/cost.scss";
+@import "./blocks/example.scss";
+@import "./blocks/promoution.scss";
+@import "./blocks/aboutWork.scss";
+@import "./blocks/store.scss";
+@import "./blocks/control.scss";
+@import "./blocks/excellence.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/team.scss";
+@import "./blocks/master.scss";
+@import "./blocks/youtube.scss";
+@import "./blocks/partners.scss";
+@import "./blocks/question.scss";
+@import "./blocks/adv.scss";
+@import "./blocks/footerInfo.scss";
+@import "./blocks/footer.scss";

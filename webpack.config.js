@@ -69,14 +69,14 @@ module.exports = {
         collapseWhitespace: isProd,
       }
     }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, 'src/favicon.ico'),
-          to: path.resolve(__dirname, 'dist')
-        },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, 'src/images'),
+    //       to: path.resolve(__dirname, 'dist/images')
+    //     },
+    //   ],
+    // }),
     new MiniCssExtractPlugin({
       filename: filename('css'),
     }),
@@ -96,7 +96,7 @@ module.exports = {
         use: cssLoaders('sass-loader')
       },
       {
-        test: /\.(png|jpg|svg)$/,
+        test: /\.(png|jpg|svg|ico)$/,
         type: 'asset/resource',
       },
       {
@@ -127,4 +127,4 @@ module.exports = {
       }
     ]
   }
-}
+};

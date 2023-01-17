@@ -1,0 +1,183 @@
+.cost {
+  background-color: #e5e5e5;
+}
+
+.cost__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 67px;
+}
+
+.cost__title {
+  margin-bottom: 41px;
+}
+
+.cost__type {
+  &-list {
+    display: flex;
+    color: #171616;
+    font-size: 14px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 285px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-bottom: 34px;
+
+    .call__btn {
+      align-self: center;
+    }
+  }
+
+  &-head {
+    display: flex;
+    align-items: center;
+    padding: 14px 0 14px 28px;
+    background-color: #e3eaef;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    &__img {
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+
+    &__name {
+      color: #6cac3d;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__date {
+      font-weight: bold;
+    }
+  }
+
+  &-text {
+    font-weight: 300;
+    padding: 26px 15px 0 28px;
+    line-height: 16px;
+    border-bottom: 2px solid #2d4872;
+    min-height: 146px;
+  }
+
+  &-work__list {
+    padding: 15px 0 41px 28px;
+  }
+
+  &-work__item {
+    margin-bottom: 15px;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  &-work__name {
+    font-weight: 700;
+    padding-bottom: 5px;
+  }
+
+  &-work__descitem {
+    margin-bottom: 2px;
+  }
+
+  &-work__desctext {
+    padding-left: 10px;
+
+    &::before {
+      content: url("./../../images/cost/Vector.png");
+      right: 12px;
+      position: relative;
+    }
+  }
+
+  &-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -15px;
+    padding-bottom: 20px;
+  }
+
+  &-prices {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 29px;
+    margin-bottom: 10px;
+  }
+
+  &-old {
+    text-decoration: line-through;
+    margin-right: 11px;
+  }
+
+  &-new {
+    font-weight: bold;
+    color: #6cac3d;
+    font-size: 16px;
+  }
+
+  &-open__block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:hover .cost__type-open {
+      display: block;
+      opacity: 1;
+    }
+
+    &:hover .cost__type-subtitle{
+      &::after {
+        position: absolute;
+        transform: rotateX(181deg);
+        top: -2px;
+      }
+    }
+
+    .cost__type-open {
+      display: block;
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 420px;
+      bottom: 30px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding-bottom: 34px;
+      transition: opacity 1s;
+    }
+
+    .cost__type-subtitle {
+      position: relative;
+      font-size: 18px;
+      color: #2d4872;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: -13px;
+      text-align: center;
+
+      &::after {
+        content: url("./../../images/cost/arch.png");
+        position: relative;
+        transition: transform 0.4s;
+      }
+    }
+  }
+}

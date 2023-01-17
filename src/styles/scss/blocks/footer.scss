@@ -1,0 +1,43 @@
+footer {
+  padding: 27px 0 30px;
+  background-color: #2e3648;
+  color: #cbcbcb;
+
+  .footer {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    &__rules {
+      display: flex;
+      flex: 1;
+
+      &-text {
+        color: #CBCBCB;
+        margin-right: 3px;
+      }
+
+      &-text {
+        color: #FFFFFF;
+      }
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 149px;
+      margin: 0 70px 0 66px;
+    }
+
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      flex: 2;
+    }
+  }
+}
